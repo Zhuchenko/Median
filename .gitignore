@@ -1,0 +1,11 @@
+.vscode/
+
+npm-debug.log*
+yarn-error.log
+lerna-debug.log
+node_modules
+*.tgz
+package-lock.json
+.idea
+.out
+packages/**/dist/**
