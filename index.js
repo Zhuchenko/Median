@@ -1,4 +1,5 @@
 var median = require('./median.js');
+var print = require('./print.js');
 
 var points1 = [
     {x: 0, y: 0},
@@ -12,6 +13,11 @@ var points1 = [
     {x: 5, y: 0},
     {x: 5, y: 3}];
 
+var a = new median(points1);
+console.log(a);
+print(a,points1);
+
+
 var points2 = [
     {x: 0, y: 3},
     {x: 1, y: 0},
@@ -22,6 +28,11 @@ var points2 = [
     {x: 4, y: 3},
     {x: 5, y: 0},
     {x: 5, y: 3}];
+
+var b = new median(points2);
+console.log(b);
+print(b,points2);
+
 
 var points3 = [
     {x: 0, y: 3},
@@ -36,6 +47,11 @@ var points3 = [
     {x: 1, y: -1},
     {x: 0, y: -3},
     {x: 2, y: -1}];
+
+var c = new median(points3);
+console.log(c);
+print(c,points3);
+
 
 var points4 = [
     {x: 0, y: 3},
@@ -59,12 +75,6 @@ var points4 = [
     {x: 5, y: 4},
     {x: 6, y: 3}];
 
-var a = new median(points1);
-var b = new median(points2);
-var c = new median(points3);
 var d = new median(points4);
-
-console.log(a);
-console.log(b);
-console.log(c);
 console.log(d);
+print(d,points4);
